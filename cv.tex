@@ -1,0 +1,160 @@
+%-------------------------
+% Jacob J. Kitzmann Resume in Latex
+% Based off of: https://github.com/jakeryang/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-1pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge Jacob Jeffery Kitzmann} \\ \vspace{5pt}
+    \small \texttt{614 E. Jefferson St Iowa City, IA 52245} \hspace{1pt} $|$
+    \hspace{1pt} \hspace{2pt} \texttt{jacobkitz@gmail.com} \hspace{1pt} $|$ 
+    \\ \vspace{-3pt}
+\end{center}
+
+\section {RESEARCH INTEREST}
+Medical image processing and analysis -- Photon Counting Computed Tomography -- Acquisition/reconstruction protocol development -- Pulmonary imaging
+
+\section {EDUCATION}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+        {Doctor of Philosophy in Biomedical Engineering}
+        {June 2025 -- Present}
+        {The University of Iowa}
+        {Iowa City, IA}
+            \resumeItemListStart
+            \resumeItem {Certificate in College Teaching - Biological and Life Sciences}
+            \resumeItem {Triathlon Club Team}
+            \resumeItemListEnd
+    \resumeSubheading
+        {Bachelor of Science in Biomedical Engineering}
+        {August 2020 -- May 2025}
+        {The University of Iowa}
+        {Iowa City, IA}
+          	\resumeItemListStart
+            \resumeItem {Minor in Mathematics}
+        	\resumeItem {Ski and Snowboard club, Pi Kappa Phi Fraternity}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section {RESEARCH EXPERIENCE}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+        {Graduate Research Student}
+        {June 2025 -- Present}
+        {University of Iowa Health Care Dept. of Radiology}
+        {Iowa City, IA}
+            \resumeItemListStart
+            \resumeItem {placeholder}
+    
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+\section {TEACHING EXPERIENCE}
+
+\section {PUBLICATIONS}
+
+\end{document}
